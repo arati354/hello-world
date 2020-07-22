@@ -1,5 +1,8 @@
 package com.company;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,6 +10,10 @@ public class Main {
         System.out.println("hello world ! from github.com..");
         System.out.print("Arati Raut *");
         //System.out.println("Java Automation\n");
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-ddgit  'at' HH:mm:ss z");
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println(formatter.format(date));
+
 
         /*
         //4/6/2020 2:20 pm
